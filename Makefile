@@ -1,6 +1,6 @@
 FC=gfortran
 FFLAGS=-O3 -Wall -Wextra
-#MODULES=maxvalues.f95
+MODULES=integermod.f95
 PROG=maxvalues.f95
 SRC=$(MODULES) $(PROG)
 OBJ=${SRC:.f95=.o}
@@ -13,6 +13,9 @@ all: clean maxvalues
 
 maxvalues: $(OBJ)
 	$(FC) $(FFLAGS) -o $@ $(OBJ)
+
+lib: $(MODULES)
+	$(FC) $(FFLAGS) -c $(MODULES)
 
 clean:
 	rm -f *.o *.mod $(BASE)
