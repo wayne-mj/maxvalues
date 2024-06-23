@@ -1,6 +1,6 @@
 FC=gfortran
 FFLAGS=-O3 -Wall -Wextra
-MODULES=integermod.f95
+MODULES=integermod.f95 realmod.f95
 PROG=maxvalues.f95
 SRC=$(MODULES) $(PROG)
 OBJ=${SRC:.f95=.o}
