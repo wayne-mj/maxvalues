@@ -1,6 +1,6 @@
 module integermod
     implicit none
-    character(len=1) :: newline = achar(13)
+    
 
     contains
     subroutine integersizes()
@@ -9,6 +9,7 @@ module integermod
         integer(8) :: longint
         integer(16) :: longlongint
 
+        character(len=1) :: newline = achar(13)
 
         print *, newline, 'Short integer:         ', huge(shortint)
         print *, newline, 'Short integer:         ', -huge(shortint)
