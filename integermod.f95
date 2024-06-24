@@ -13,25 +13,25 @@ module integermod
 
         print *, newline, 'Short integer:         ', huge(shortint)
         print *, newline, 'Short integer:         ', -huge(shortint)
-        print *, newline, 'Short integer:         ', storage_size(shortint), ' bytes'
+        print *, newline, 'Short integer:         ', storage_size(shortint), ' bits'
 
         print *, newline
 
         print *, newline, 'Integer:               ', huge(int)
         print *, newline, 'Integer:               ', -huge(int)
-        print *, newline, 'Integer:               ', storage_size(int), ' bytes'
+        print *, newline, 'Integer:               ', storage_size(int), ' bits'
 
         print *, newline
 
         print *, newline, 'Long integer:          ', huge(longint)
         print *, newline, 'Long integer:          ', -huge(longint)
-        print *, newline, 'Long integer:          ', storage_size(longint), ' bytes'
+        print *, newline, 'Long integer:          ', storage_size(longint), ' bits'
 
         print *, newline
 
         print *, newline, 'Long long integer:     ', huge(longlongint)
         print *, newline, 'Long long integer:     ', -huge(longlongint)
-        print *, newline, 'Long long integer:     ', storage_size(longlongint), ' bytes'
+        print *, newline, 'Long long integer:     ', storage_size(longlongint), ' bits'
 
         print *, newline
     end subroutine integersizes

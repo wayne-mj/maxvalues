@@ -10,7 +10,7 @@ module logicalmod
 
         print *, newline, 'Logical:               ', flag
         print *, newline, 'Logical:               ', .not. flag
-        print *, newline, 'Logical:               ', storage_size(flag), ' bytes'
+        print *, newline, 'Logical:               ', storage_size(flag), ' bits'
 
     end subroutine logicalsizes
 
