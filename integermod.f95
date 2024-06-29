@@ -11,24 +11,28 @@ module integermod
 
         character(len=1) :: newline = achar(13)
 
+        print *, newline, 'integer(2) :: shortint'
         print *, newline, 'Short integer:         ', huge(shortint)
         print *, newline, 'Short integer:         ', -huge(shortint)
         print *, newline, 'Short integer:         ', storage_size(shortint), ' bits'
 
         print *, newline
 
+        print *, newline, 'integer(4) :: int'
         print *, newline, 'Integer:               ', huge(int)
         print *, newline, 'Integer:               ', -huge(int)
         print *, newline, 'Integer:               ', storage_size(int), ' bits'
 
         print *, newline
 
+        print *, newline, 'integer(8) :: longint'
         print *, newline, 'Long integer:          ', huge(longint)
         print *, newline, 'Long integer:          ', -huge(longint)
         print *, newline, 'Long integer:          ', storage_size(longint), ' bits'
 
         print *, newline
 
+        print *, newline, 'integer(16) :: longlongint'
         print *, newline, 'Long long integer:     ', huge(longlongint)
         print *, newline, 'Long long integer:     ', -huge(longlongint)
         print *, newline, 'Long long integer:     ', storage_size(longlongint), ' bits'

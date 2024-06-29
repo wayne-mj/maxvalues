@@ -8,6 +8,7 @@ module logicalmod
 
         logical :: flag = .true.    
 
+        print *, newline, 'logical :: flag = .true.'
         print *, newline, 'Logical:               ', flag
         print *, newline, 'Logical:               ', .not. flag
         print *, newline, 'Logical:               ', storage_size(flag), ' bits'

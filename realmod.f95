@@ -8,19 +8,22 @@ module realmod
         real(8) :: double
         real(16) :: longdouble
         character(len=1) :: newline = achar(13)
-        
+
+        print *, newline, 'real(4) :: single'
         print *, newline, 'Single precision:      ', huge(single)
         print *, newline, 'Single precision:      ', -huge(single)
         print *, newline, 'Single precision:      ', storage_size(single), ' bits'
 
         print *, newline
 
+        print *, newline, 'real (8) :: double'
         print *, newline, 'Double precision:      ', huge(double)
         print *, newline, 'Double precision:      ', -huge(double)
         print *, newline, 'Double precision:      ', storage_size(double), ' bits'
 
         print *, newline
 
+        print *, newline, 'real(16) :: longdouble'
         print *, newline, 'Long double precision: ', huge(longdouble)
         print *, newline, 'Long double precision: ', -huge(longdouble)
         print *, newline, 'Long double precision: ', storage_size(longdouble), ' bits'
